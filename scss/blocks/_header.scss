@@ -1,0 +1,134 @@
+.site-header{
+  margin-top: 25px;
+}
+
+.header__container{
+  border-bottom: 0.3px solid rgba(70, 163, 88, 0.5);
+}
+
+.header__box{
+  margin-top: 1px;
+}
+
+.header__list{
+  @include list-style;
+}
+
+.header__item{
+  padding-top: 8px;
+
+  &:not(:last-child){
+    margin-right: 50px;
+  }
+}
+
+.header__item-link{
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color;
+  text-decoration: none;
+  text-transform: capitalize;
+  display: block;
+  padding-bottom: 25px;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+
+  &--active{
+    font-weight: 700;
+    border-bottom: 3px solid $primary-color;
+  }
+
+  &:hover{
+    color: $text-color;
+    text-shadow: 0px 0px 1px $text-color;
+    border-bottom: 3px solid $primary-color;
+  }
+}
+
+.header__btn-holder{
+  margin-left: 30px;
+}
+
+.header__icon-btn{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  .bx{
+    font-size: 29px;
+    color: $text-color;
+    margin-top: 3px;
+    transition: all 0.3s ease;
+  }
+
+  img{
+    transition: all 0.3s ease;
+  }
+
+  &:hover{
+    .bx{
+      transform: scale(1.1);
+    }
+
+    img{
+      transform: scale(1.1);
+    }
+
+    .header__cart-num{
+      transform: scale(1.1);
+      font-size: 12px;
+    }
+  }
+}
+
+.header__cart-num{
+  background: $primary-color;
+  border: 2px solid $white-color;
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -2px;
+  right: -7px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: $white-color;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.general-btn{
+  background: $primary-color;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white-color;
+  transition: all 0.3s ease;
+
+  &:hover{
+    outline: 1px solid $primary-color;
+    color: $primary-color;
+    background-color: transparent;
+
+    .header__img{
+      filter: invert(48%) sepia(100%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%);
+    }
+  }
+}
+
+.header__btn{
+  padding: 7px 17px 8px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+
+  img{
+    margin-right: 4px;
+    transition: all 0.3s ease;
+  }
+}
