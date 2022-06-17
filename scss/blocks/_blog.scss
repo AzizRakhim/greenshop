@@ -1,0 +1,135 @@
+#blog{
+  padding-bottom: 100px;
+}
+
+.blog__title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+  color: $text-color;
+  margin-bottom: 15px;
+}
+
+.blog__text{
+  font-size: 14px;
+  line-height: 24px;
+  color: $desc-color;
+  margin-bottom: 35px;
+}
+
+.blog__list{
+  @include list-style;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 43px;
+}
+
+.blog__item{
+  &:hover{
+    img{
+      transform: scale(1.1) rotate(5deg);
+    }
+  }
+}
+
+.blog__img-box{
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+}
+
+.blog__info{
+  background-color: $bg-color;
+  padding: 9px 13px 12px;
+}
+
+.blog__entry{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $primary-color;
+  margin-bottom: 4px;
+}
+
+.blog__item-title{
+  margin-bottom: 4px;
+}
+
+.blog__title-link{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: $text-color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover{
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
+
+.blog__item-text{
+  font-size: 14px;
+  line-height: 22px;
+  color: $desc-color;
+  margin-bottom: 9px;
+}
+
+.blog__item-link{
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  width: 40%;
+
+  img{
+    margin-left: 3px;
+    margin-top: 2px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover{
+    color: $primary-color;
+
+    img{
+      transform: translateX(5px);
+      filter: invert(48%) sepia(100%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%);
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .blog__item-link{
+    width: 60%;
+  }
+
+  .blog__item-title{
+    font-size: 15px;
+  }
+
+  .blog__list{
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .blog__list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .blog__list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

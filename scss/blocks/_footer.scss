@@ -1,0 +1,273 @@
+.footer__top{
+  background: rgba(70, 163, 88, 0.1);
+  padding: 23px 26px;
+}
+
+.footer__top-list{
+  @include list-style;
+}
+
+.footer__top-item{
+  img{
+    margin-right: 9px;
+  }
+
+  &:first-child{
+    margin-right: 87px;
+  }
+
+  &:nth-child(2){
+    width: 100%;
+    max-width: 205px;
+    margin-right: 60px;
+  }
+
+  &:nth-child(3){
+    margin-right: 73px;
+  }
+}
+
+.footer__top-text{
+  font-size: 14px;
+  line-height: 22px;
+  color: $text-color;
+  text-decoration: none;
+}
+
+.footer__hover{
+  position: relative;
+
+  &::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -3px;
+    background-color: $primary-color;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  }
+
+  &:hover{
+    color: $primary-color;
+
+    &:after{
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+.footer__middle{
+  background-color: $bg-color;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+  padding: 33px 23px 29px;
+}
+
+.footer__middle-list{
+  @include list-style;
+}
+
+.footer__middle-item{
+  &:first-child{
+    margin-right: 166px;
+  }
+
+  &:nth-child(2){
+    margin-right: 129px;
+  }
+
+  &:nth-child(3){
+    margin-right: 173px;
+  }
+}
+
+.footer__middle-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: $text-color;
+  margin-bottom: 8px;
+}
+
+.footer__middle-inner-list{
+  @include list-style;
+}
+
+.footer__middle-link{
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+  text-decoration: none;
+  position: relative;
+
+  &::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -3px;
+    background-color: $primary-color;
+    transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  }
+
+  &:hover{
+    color: $primary-color;
+    
+    &:after{
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+  }
+}
+
+.media-title{
+  margin-bottom: 20px;
+}
+
+.footer__social{
+  @include list-style;
+  margin-bottom: 33px;
+}
+
+.footer__social-item{
+  &:not(:last-child){
+    margin-right: 10px;
+  }
+}
+
+.footer__social-item-link{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid rgba(70, 163, 88, 0.2);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+
+  &:hover{
+    background-color: $primary-color;
+
+    .bx{
+      color: $white-color;
+    }
+  }
+
+  .bx{
+    color: rgba(70, 163, 88, 0.6);
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+}
+
+.card-title{
+  margin-bottom: 13px;
+}
+
+.footer__bottom{
+  padding: 7px 0 13px;
+}
+
+.footer__bottom-text{
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .footer__top-list{
+    flex-wrap: wrap;
+  }
+
+  .footer__top-item{
+    width: 50% !important;
+    max-width: 50%;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .footer__middle-item{
+    &:first-child{
+      margin-right: 100px;
+    }
+  
+    &:nth-child(2){
+      margin-right: 100px;
+    }
+  
+    &:nth-child(3){
+      margin-right: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer__middle-item{
+    margin-bottom: 30px;
+
+    &:first-child{
+      margin-right: 120px;
+    }
+  
+    &:nth-child(2){
+      margin-right: 120px;
+    }
+  
+    &:nth-child(3){
+      margin-right: 0px !important;
+    }
+
+    &:last-child{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__top-list{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer__top-item{
+    width: 100% !important;
+    margin-right: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .footer__middle-list{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__middle-item{
+    margin-right: 0 !important;
+
+    &:last-child{
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+
+  .footer__social{
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .footer__bottom-text{
+    width: 200px;
+  }
+}

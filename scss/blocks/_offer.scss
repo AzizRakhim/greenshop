@@ -1,0 +1,143 @@
+#offer{
+  padding-bottom: 138px;
+}
+
+.offer__box{
+  @include list-style;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.offer__item{
+  background-color: $bg-color;
+  width: 100%;
+  background-image: url("/media/images/offer-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.offer__img-box{
+  width: 292px;
+  height: 292px;
+  background-image: url("/media/images/summer.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -52px;
+  left: 0;
+}
+
+.offer__info{
+  margin-left: auto;
+  padding-top: 38px;
+  padding-right: 30px;
+  padding-bottom: 46px;
+}
+
+.offer__bg-two{
+  background-image: url("/media/images/styling.png");
+}
+
+.offer__title{
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: right;
+  text-transform: uppercase;
+  color: $text-color;
+  width: 100%;
+  max-width: 150px;
+  margin-left: auto;
+}
+
+.offer__text{
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: $desc-color;
+}
+
+.offer__btn{
+  padding: 11px 27px;
+  margin-left: auto;
+
+  img{
+    margin-left: 3px;
+    margin-top: 2px;
+    transition: all 0.3s ease;
+  }
+
+  &:hover{
+    img{
+      filter: invert(48%) sepia(100%) saturate(2476%) hue-rotate(86deg) brightness(90%) contrast(119%);
+      transform: translateX(5px);
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .offer__img-box{
+    width: 250px;
+    height: 250px;
+  }
+
+  .offer__info{
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .offer__item{
+    flex-direction: column !important;
+  }
+
+  .offer__img-box{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .offer__info{
+    width: 100%;
+    padding-top: 200px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .offer__title{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .offer__text{
+    text-align: center;
+  }
+
+  .offer__btn{
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer__img-box{
+    width: 200px;
+    height: 200px;
+  }
+
+  .offer__info{
+    padding-top: 150px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .offer__box{
+    grid-template-columns: repeat(1, auto);
+    gap: 70px 0px;
+  }
+}

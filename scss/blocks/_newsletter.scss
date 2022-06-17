@@ -1,0 +1,163 @@
+.newsletter__box{
+  background-color: $bg-color;
+  padding: 25px;
+}
+
+.newsletter__list{
+  @include list-style;
+}
+
+.newsletter__item{
+  position: relative;
+
+  &:not(:last-child){
+    &::after{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 1px;
+      background-color: rgba(70, 163, 88, 0.1);
+      position: absolute;
+      top: 0;
+      right: 27px;
+    }
+  }
+}
+
+.newsletter__img-box{
+  margin-bottom: 15px;
+}
+
+.newsletter__title{
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $text-color;
+  margin-bottom: 9px;
+}
+
+.newsletter__text{
+  font-size: 14px;
+  line-height: 22px;
+  color: $desc-color;
+  width: 100%;
+  max-width: 204px;
+  margin-bottom: 0;
+}
+
+.newsletter__form-box{
+  padding-left: 25px;
+}
+
+.newsletter__join-title{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  color: $text-color;
+  margin-bottom: 18px;
+  margin-top: 12px;
+}
+
+.newsletter__form{
+  margin-bottom: 17px;
+}
+
+.newsletter__input-box{
+  background: $white-color;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  display: flex;
+}
+
+.newsletter__input{
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  flex-grow: 1;
+
+  &:focus{
+    outline: none;
+  }
+
+  &::placeholder{
+    font-size: 14px;
+    line-height: 16px;
+    color: #acacac;
+  }
+}
+
+.newsletter__btn{
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 0px 6px 6px 0px !important;
+}
+
+.newsletter__join-text{
+  font-size: 13px;
+  line-height: 22px;
+  color: $desc-color;
+}
+
+@media screen and (max-width: 1400px) {
+  .newsletter__item{
+    padding-right: 50px;
+  }
+
+  .newsletter__title{
+    font-size: 14px;
+  }
+  
+  .newsletter__text{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .newsletter__box{
+    flex-direction: column;
+  }
+
+  .newsletter__list{
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .newsletter__form-box{
+    margin-right: auto;
+    width: 50%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter__list{
+    flex-direction: column;
+  }
+
+  .newsletter__item{
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 30px;
+
+    &::after{
+      display: none !important;
+    }
+  }
+
+  .newsletter__text{
+    margin: 0 auto;
+  }
+
+  .newsletter__form-box{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .newsletter__box{
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,14 @@
     Greenshop
   </title>
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 </head>
+
 <body>
 
   <!-- HERO SECTION START -->
@@ -53,6 +57,14 @@
                   blogs
                 </a>
               </li>
+              <li class="header__item">
+                <div class="header__btn-holder header__log-in-menu-btn d-none">
+                  <button class="general-btn header__btn">
+                    <img src="./media/images/login.svg" alt="login" class="header__img">
+                    Login
+                  </button>
+                </div>
+              </li>
             </ul>
           </nav>
           <div class="header__btns d-flex">
@@ -69,10 +81,15 @@
                 </span>
               </button>
             </div>
-            <div class="header__btn-holder">
+            <div class="header__btn-holder login-btn">
               <button class="general-btn header__btn">
                 <img src="./media/images/login.svg" alt="login" class="header__img">
                 Login
+              </button>
+            </div>
+            <div class="header__btn-holder header__menu-holder align-items-center">
+              <button class="header__menu-btn">
+                <span class="header__menu-line"></span>
               </button>
             </div>
           </div>
@@ -81,40 +98,948 @@
     </header>
 
     <!-- HEADER END -->
-    
+
     <div class="container">
-      <div class="hero__box d-flex position-relative">
-        <div class="hero__info col-6">
-          <span class="hero__entry">
-            Welcome to GreenShop
-          </span>
-          <h2 class="hero__title">
-            Let’s Make a Better 
-            <span class="hero__title--green">
-              Planet
-            </span>
-          </h2>
-          <p class="hero__text">
-            We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!
-          </p>
-          <div class="hero__btn-box">
-            <button class="general-btn hero__btn">
-              shop now
-            </button>
-          </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="hero__bg-img-box col-6"></div>
-        <div class="hero__slider-btns">
-          <button class="hero__slider-btn"></button>
-          <button class="hero__slider-btn hero__slider-btn--active"></button>
-          <button class="hero__slider-btn"></button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="hero__box d-flex position-relative">
+              <div class="hero__info col-12 col-md-6">
+                <span class="hero__entry">
+                  Welcome to GreenShop
+                </span>
+                <h2 class="hero__title">
+                  Let’s Make a Better
+                  <span class="hero__title--green">
+                    Planet
+                  </span>
+                </h2>
+                <p class="hero__text">
+                  We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create
+                  an unique Urban Jungle. Order your favorite plants!
+                </p>
+                <div class="hero__btn-box">
+                  <button class="general-btn hero__btn">
+                    shop now
+                  </button>
+                </div>
+              </div>
+              <div class="hero__bg-img-box col-12 col-md-6"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero__box d-flex position-relative">
+              <div class="hero__info col-12 col-md-6">
+                <span class="hero__entry">
+                  Welcome to GreenShop
+                </span>
+                <h2 class="hero__title">
+                  your plants at your
+                  <span class="hero__title--green">
+                    home
+                  </span>
+                </h2>
+                <p class="hero__text">
+                  "Just living is not enough. One must have sunshine, freedom and a little flower."
+                  - Hans Christian Andersen  
+                </p>
+                <div class="hero__btn-box">
+                  <button class="general-btn hero__btn">
+                    shop now
+                  </button>
+                </div>
+              </div>
+              <div class="hero__bg-img-box hero__bg-two col-12 col-md-6"></div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hero__box d-flex position-relative">
+              <div class="hero__info col-12 col-md-6">
+                <span class="hero__entry">
+                  The perfect gift
+                </span>
+                <h2 class="hero__title">
+                  Beautiful Plants & 
+                  <span class="hero__title--green">
+                    Gifts
+                  </span>
+                </h2>
+                <p class="hero__text">
+                  GreenShop is rooted in the beauty of nature. We bring thoughtful selection and careful curation to a stunning collection of interior botanicals.
+                </p>
+                <div class="hero__btn-box">
+                  <button class="general-btn hero__btn">
+                    shop now
+                  </button>
+                </div>
+              </div>
+              <div class="hero__bg-img-box hero__bg-three col-12 col-md-6"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  <!-- HERO END -->
+  <!-- PRODUCTS START -->
+
+  <section id="product" class="product">
+    <div class="container">
+      <div class="product__box d-flex">
+        <div class="category__box-shadow d-none"></div>
+        <div class="category col-md-4 col-lg-3">
+          <div class="category__container">
+            <h3 class="category__title">
+              Categories
+            </h3>
+            <ul class="category__list">
+              <li class="category__item category__item--active d-flex align-items-center justify-content-between">
+                <button class="category__btn category__btn--active">
+                  House Plants
+                </button>
+                <span class="category__num">
+                  (33)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Potter Plants
+                </button>
+                <span class="category__num">
+                  (12)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Seeds
+                </button>
+                <span class="category__num">
+                  (65)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Small Plants
+                </button>
+                <span class="category__num">
+                  (39)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Big Plants
+                </button>
+                <span class="category__num">
+                  (23)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Succulents
+                </button>
+                <span class="category__num">
+                  (17)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Trerrariums
+                </button>
+                <span class="category__num">
+                  (19)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Gardening
+                </button>
+                <span class="category__num">
+                  (13)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Accessories
+                </button>
+                <span class="category__num">
+                  (18)
+                </span>
+              </li>
+            </ul>
+            <h3 class="category__title range-title">
+              price range
+            </h3>
+            <div class="category__range-box">
+              <div class="category__range-slider-box">
+                <div class="category__slider-track"></div>
+                <input 
+                  type="range" 
+                  name="range" 
+                  min="39" 
+                  max="1500" 
+                  value="39" 
+                  id="category__slider-one" 
+                  oninput="sliderOne()"
+                >
+                <input 
+                  type="range" 
+                  name="range" 
+                  min="39" 
+                  max="1500" 
+                  value="1230" 
+                  id="category__slider-two"
+                  oninput="sliderTwo()"
+                >
+              </div>
+              <div class="category__price-box">
+                Price:
+                <span class="category__price-green">
+                  $<span class="val-one">39</span> - $<span class="val-two">1230</span> $
+                </span>
+              </div>
+              <button class="general-btn category__filter-btn">
+                Filter
+              </button>
+            </div>
+            <h3 class="category__title">
+              Size
+            </h3>
+            <ul class="category__list">
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Small
+                </button>
+                <span class="category__num">
+                  (119)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Medium
+                </button>
+                <span class="category__num">
+                  (86)
+                </span>
+              </li>
+              <li class="category__item d-flex align-items-center justify-content-between">
+                <button class="category__btn">
+                  Large
+                </button>
+                <span class="category__num">
+                  (78)
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="category__img-box">
+            <img src="./media/images/super-sale-banner.png" alt="super sale banner">
+          </div>
+        </div>
+        <div class="category__btn-box">
+          <button class="general-btn category__filter-offcanvas-btn d-flex align-items-center">
+            <i class='bx bx-slider-alt'></i>
+            Filter
+          </button>
+        </div>
+        <div class="product__holder col-12 col-md-8 col-lg-9">
+          <div class="product__header d-flex align-items-center justify-content-between">
+            <ul class="product__list d-flex">
+              <li class="product__item">
+                <button class="product__item-btn product__item-btn--active">
+                  all plants
+                </button>
+              </li>
+              <li class="product__item">
+                <button class="product__item-btn">
+                  New Arrivals
+                </button>
+              </li>
+              <li class="product__item">
+                <button class="product__item-btn">
+                  Sale
+                </button>
+              </li>
+            </ul>
+            <div class="product__sort-box">
+              Sort by
+              <select name="sort" id="sort" class="product__sort-select">
+                <option value="default">
+                  Default sorting
+                </option>
+                <option value="cheap">
+                  Cheap
+                </option>
+                <option value="expensive">
+                  Expensive
+                </option>
+                <option value="popular">
+                  Popular
+                </option>
+              </select>
+            </div>
+          </div>
+          <ul class="product__plant-list">
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/barberton.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Barberton Daisy
+                </h3>
+                <span class="product__plant-price">
+                  $119.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/angel.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Angel Wing Begonia
+                </h3>
+                <span class="product__plant-price">
+                  $169.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item position-relative">
+              <div class="product__plant-img-box">
+                <img src="./media/images/african.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-discount">
+                13% OFF
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  African Violet
+                </h3>
+                <span class="product__plant-price">
+                  $199.00
+                </span>
+                <span class="product__plant-crossed-price">
+                  $229.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box beach-box">
+                <img src="./media/images/beach.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Beach Spider Lily
+                </h3>
+                <span class="product__plant-price">
+                  $129.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/blushing.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Blushing Bromeliad
+                </h3>
+                <span class="product__plant-price">
+                  $139.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/aluminum.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Aluminum Plant
+                </h3>
+                <span class="product__plant-price">
+                  $179.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/bird's.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Bird's Nest Fern
+                </h3>
+                <span class="product__plant-price">
+                  $99.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/broadleaf.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Broadleaf Lady Palm
+                </h3>
+                <span class="product__plant-price">
+                  $59.00
+                </span>
+              </div>
+            </li>
+            <li class="product__plant-item">
+              <div class="product__plant-img-box">
+                <img src="./media/images/chinese.png" alt="plant">
+                <div class="product__plant-hover-btns d-flex align-items-center">
+                  <button class="product__plant-hover-btn">
+                    <img src="./media/images/cart.svg" alt="cart">
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-heart'></i>
+                  </button>
+                  <button class="product__plant-hover-btn">
+                    <i class='bx bx-search'></i>
+                  </button>
+                </div>
+              </div>
+              <div class="product__plant-info">
+                <h3 class="product__plant-title">
+                  Chinese Evergreen
+                </h3>
+                <span class="product__plant-price">
+                  $39.00
+                </span>
+              </div>
+            </li>
+          </ul>
+          <ul class="product__pagination-list d-flex align-items-center">
+            <li class="product__pagination-item">
+              <button class="product__pagination-btn product__pagination-btn--active">
+                1
+              </button>
+            </li>
+            <li class="product__pagination-item">
+              <button class="product__pagination-btn">
+                2
+              </button>
+            </li>
+            <li class="product__pagination-item">
+              <button class="product__pagination-btn">
+                3
+              </button>
+            </li>
+            <li class="product__pagination-item">
+              <button class="product__pagination-btn">
+                4
+              </button>
+            </li>
+            <li class="product__pagination-item">
+              <button class="product__pagination-btn">
+                <img src="./media/images/arrow-right.svg" alt="arrow right">
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT SECTIONE END -->
+  <!-- OFFER SECTION START -->
+
+  <section id="offer" class="offer">
+    <div class="container">
+      <ul class="offer__box">
+        <li class="offer__item d-flex">
+          <div class="offer__img-box col-6 col-lg-5"></div>
+          <div class="offer__info col-6 col-lg-7">
+            <h3 class="offer__title">
+              Summer cactus
+              & succulents
+            </h3>
+            <p class="offer__text">
+              We are an online plant shop offering a wide range of cheap and trendy plants
+            </p>
+            <button class="general-btn offer__btn d-flex align-items-center">
+              Find More
+              <img src="./media/images/right-arrow.svg" alt="right arrow">
+            </button>
+          </div>
+        </li>
+        <li class="offer__item d-flex">
+          <div class="offer__img-box offer__bg-two col-6 col-lg-5"></div>
+          <div class="offer__info col-6 col-lg-7">
+            <h3 class="offer__title">
+              Styling Trends
+              & much more
+            </h3>
+            <p class="offer__text">
+              We are an online plant shop offering a wide range of cheap and trendy plants
+            </p>
+            <button class="general-btn offer__btn d-flex align-items-center">
+              Find More
+              <img src="./media/images/right-arrow.svg" alt="right arrow">
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OFFER SECTION END -->
+  <!-- BLOG SECTION START -->
+
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2 class="blog__title text-center">
+        Our Blog Posts
+      </h2>
+      <p class="blog__text text-center">
+        We are an online plant shop offering a wide range of cheap and trendy plants. 
+      </p>
+      <ul class="blog__list">
+        <li class="blog__item">
+          <div class="blog__img-box">
+            <img src="./media/images/cactus.png" alt="cactus">
+          </div>
+          <div class="blog__info">
+            <div class="blog__entry">
+              September 12  I Read in 6 minutes
+            </div>
+            <h3 class="blog__item-title">
+              <a href="#" class="blog__title-link">
+                Cactus & Succulent 
+                Care Tips
+              </a>
+            </h3>
+            <p class="blog__item-text">
+              Cacti are succulents are easy care plants for any home or patio. 
+            </p>
+            <a href="#" class="blog__item-link d-flex align-items-center">
+              read more
+              <img src="./media/images/blog-arrow.svg" alt="arrow"> 
+            </a>
+          </div>
+        </li>
+        <li class="blog__item">
+          <div class="blog__img-box">
+            <img src="./media/images/top.png" alt="top">
+          </div>
+          <div class="blog__info">
+            <div class="blog__entry">
+              September 13  I Read in 2 minutes
+            </div>
+            <h3 class="blog__item-title">
+              <a href="#" class="blog__title-link">
+                Top 10 Succulents for
+                Your Home
+              </a>
+            </h3>
+            <p class="blog__item-text">
+              Best in hanging baskets. Prefers medium to high light. 
+            </p>
+            <a href="#" class="blog__item-link d-flex align-items-center">
+              read more
+              <img src="./media/images/blog-arrow.svg" alt="arrow"> 
+            </a>
+          </div>
+        </li>
+        <li class="blog__item">
+          <div class="blog__img-box">
+            <img src="./media/images/cacti.png" alt="cacti">
+          </div>
+          <div class="blog__info">
+            <div class="blog__entry">
+              September 15  I Read in 3 minutes
+            </div>
+            <h3 class="blog__item-title">
+              <a href="#" class="blog__title-link">
+                Cacti & Succulent 
+                Care Tips
+              </a>
+            </h3>
+            <p class="blog__item-text">
+              Cacti and succulents thrive in containers and because most are.. 
+            </p>
+            <a href="#" class="blog__item-link d-flex align-items-center">
+              read more
+              <img src="./media/images/blog-arrow.svg" alt="arrow"> 
+            </a>
+          </div>
+        </li>
+        <li class="blog__item">
+          <div class="blog__img-box">
+            <img src="./media/images/houseplant.png" alt="houseplant">
+          </div>
+          <div class="blog__info">
+            <div class="blog__entry">
+              September 15  I Read in 2 minutes
+            </div>
+            <h3 class="blog__item-title">
+              <a href="#" class="blog__title-link">
+                Best Houseplants 
+                Room by Room
+              </a>
+            </h3>
+            <p class="blog__item-text">
+              The benefits of houseplants are endless. In addition to.. 
+            </p>
+            <a href="#" class="blog__item-link d-flex align-items-center">
+              read more
+              <img src="./media/images/blog-arrow.svg" alt="arrow"> 
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION END -->
+  <!-- NEWSLETTER START -->
+
+  <section id="newsletter" class="newsletter">
+    <div class="container">
+      <div class="newsletter__box d-flex">
+        <ul class="newsletter__list col-8 d-flex">
+          <li class="newsletter__item col-12 col-md-4">
+            <div class="newsletter__img-box">
+              <img src="./media/images/garden-care.svg" alt="garden care">
+            </div>
+            <h3 class="newsletter__title">
+              Garden Care
+            </h3>
+            <p class="newsletter__text">
+              We are an online plant shop offering a wide range of cheap and trendy plants.
+            </p>
+          </li>
+          <li class="newsletter__item col-12 col-md-4">
+            <div class="newsletter__img-box">
+              <img src="./media/images/plant-renovation.svg" alt="plant renovation">
+            </div>
+            <h3 class="newsletter__title">
+              Plant Renovation
+            </h3>
+            <p class="newsletter__text">
+              We are an online plant shop offering a wide range of cheap and trendy plants.
+            </p>
+          </li>
+          <li class="newsletter__item col-12 col-md-4">
+            <div class="newsletter__img-box">
+              <img src="./media/images/watering-garden.svg" alt="watering garden">
+            </div>
+            <h3 class="newsletter__title">
+              Watering Graden
+            </h3>
+            <p class="newsletter__text">
+              We are an online plant shop offering a wide range of cheap and trendy plants.
+            </p>
+          </li>
+        </ul>
+        <div class="newsletter__form-box col-4">
+          <h3 class="newsletter__join-title">
+            Would you like to join newsletters?
+          </h3>
+          <form class="newsletter__form">
+            <div class="newsletter__input-box">
+              <input type="email" class="newsletter__input" name="email" required placeholder="enter your email address...">
+              <button class="general-btn newsletter__btn">
+                Join
+              </button>
+            </div>
+          </form>
+          <p class="newsletter__join-text">
+            We usually post offers and challenges in newsletter. We’re your online houseplant destination. We offer a wide range of houseplants and accessories shipped directly from our (green)house to yours! 
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER SECTION END -->
+  <!-- FOOTER START -->
+
+  <footer class="site-footer footer">
+    <div class="container">
+      <div class="footer__top">
+        <ul class="footer__top-list d-flex align-items-center">
+          <li class="footer__top-item">
+            <div class="header__box">
+              <a href="#" class="header__link">
+                <img src="./media/images/logo.svg" alt="site logo">
+              </a>
+            </div>
+          </li>
+          <li class="footer__top-item d-flex align-items-center">
+            <img src="./media/images/location.svg" alt="location">
+            <p class="footer__top-text m-0">
+              70 West Buckingham Ave.
+              Farmingdale, NY 11735
+            </p>
+          </li>
+          <li class="footer__top-item d-flex align-items-center">
+            <img src="./media/images/message.svg" alt="message">
+            <a href="mailto:contact@greenshop.com" class="footer__top-text footer__hover">
+              contact@greenshop.com
+            </a>
+          </li>
+          <li class="footer__top-item d-flex align-items-center">
+            <img src="./media/images/calling.svg" alt="calling">
+            <a href="tel:+8801911717490" class="footer__top-text footer__hover">
+              +88 01911 717 490
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__middle">
+        <ul class="footer__middle-list d-flex flex-wrap">
+          <li class="footer__middle-item">
+            <h3 class="footer__middle-title">
+              My Account
+            </h3>
+            <ul class="footer__middle-inner-list">
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  My Account
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Our stores
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Contact us
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Career
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Specials
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__middle-item">
+            <h3 class="footer__middle-title">
+              Help & Guide
+            </h3>
+            <ul class="footer__middle-inner-list">
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Help Center
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  How to Buy
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Shipping & Delivery
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Product Policy
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  How to Return
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__middle-item">
+            <h3 class="footer__middle-title">
+              Categories
+            </h3>
+            <ul class="footer__middle-inner-list">
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  House Plants
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Potter Plants
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Seeds
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Small Plants
+                </a>
+              </li>
+              <li class="footer__middle-inner-item">
+                <a href="#" class="footer__middle-link">
+                  Accessories
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__middle-item">
+            <div>
+              <h3 class="footer__middle-title media-title">
+                Social Media
+              </h3>
+              <ul class="footer__social d-flex">
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class='bx bxl-facebook'></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class='bx bxl-instagram'></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class='bx bxl-twitter'></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class='bx bxl-linkedin'></i>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a href="#" class="footer__social-item-link">
+                    <i class='bx bxl-youtube'></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="footer__middle-title card-title">
+                We accept
+              </h3>
+              <div class="footer__middle-cards">
+                <img src="./media/images/cards.png" alt="cards">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__bottom text-center">
+        <p class="footer__bottom-text">
+          © 2021 GreenShop. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
